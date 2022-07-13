@@ -4,14 +4,14 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="reset.css">
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
    <title>FIRST_PROJECT</title>
 </head>
-<body>
+<body style='overflow-x:hidden;'>
    <wrapper class="wrapper">
       <div class="head-bg">
          <div class="bg-content">
@@ -31,17 +31,21 @@
                </div>
                <nav class="header__navbar">
                   <ul class="nav-list">
-                     <li><a href="#" class="menu_link">HOME</a></li>
-                     <li><a href="#" class="menu_link _active">ABOUT</a></li>
-                     <li><a href="#" class="menu_link">SERVICES</a></li>
-                     <li><a href="#" class="menu_link">WORK</a></li>
-                     <li><a href="#" class="menu_link">CONTACT</a></li>
+                     <li><a href="/" class="menu_link">HOME</a></li>
+                     <li><a href="/" class="menu_link _active">ABOUT</a></li>
+                     <li><a href="/" class="menu_link">SERVICES</a></li>
+                     <li><a href="/" class="menu_link">WORK</a></li>
+                     <li><a href="/" class="menu_link">CONTACT</a></li>
                   </ul>
                </nav>
             </div>
          </div>
          <div class="burger">
-            <img src="img/Vector.png" alt="">
+            <div class="burger_field" id='burger'>
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </div>
          </div>
       </header>
       <main class="main">
@@ -49,8 +53,7 @@
             <div class="about__container _container">
                <div class="our_story">
                   <h2 class="about_title">OUR STORY</h2>
-                  <!-- <img src="img/Line.png" alt=""> -->
-                  <div class="story__container _container">
+                  <div class="story__container">
                      <div class="description">
                         <h3 class="description__title">Founded in 2011 by John Mathew Smith, <span class="_selection">Konstruct</span> has become the number one construction management firm</h3>
                         <p class="description__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
@@ -87,7 +90,7 @@
                   </span>
                </button>
             </div>
-            <div class="services_service _container">
+            <div class="services_service">
                <div class="service_cart">
                   <img class="service_cart_icon" src="img/service1.png" alt="icon">
                   <h3  class="service_cart_title">PROJECT AND CONSTRUCTION MANAGEMENT</h3>
@@ -172,15 +175,17 @@
                      </div>
                   </div>
                </div>
-               <div class="footer__contact">
+               <adress class="footer__contact">
                   <h4 class="footer__contact-title">
                      CONTACT US
                   </h4>
                   <div class="footer__contact-adress">
-                        213 Baker Street
-                        Oriel City Kounty
-                        7000 KNW,
-                        Kountry Name
+                        <a href="https://www.google.com.ua/maps/place/KNW+Rd,+Kudumangalore,+Karnataka+571232,+%D0%98%D0%BD%D0%B4%D0%B8%D1%8F/@12.4912873,75.9493849,17z/data=!3m1!4b1!4m5!3m4!1s0x3ba5091cb0196379:0x66cd09f44ae69176!8m2!3d12.4912873!4d75.9515736?hl=ru">
+                           213 Baker Street
+                           Oriel City Kounty
+                           7000 KNW,
+                           Kountry Name
+                        </a>
                   </div>
                   <div class="footer__contact-phone">
                      <a href="tel:+239942334022 ">+23 994 233 4022 </a>
@@ -190,23 +195,23 @@
                         info@konstruct.com
                         </a>
                   </div>
-               </div>
+               </adress>
                <div class="footer__media">
-                  <a class="media-icon" id="icon-facebook" href="#"><img src="img/media-facebook.svg" alt="socials"></a>
-                  <a class="media-icon" id="icon-twiter" href="#"><img src="img/media-twiter.svg" alt="socials"></a>
-                  <a class="media-icon" id="icon-google" href="#"><img src="img/media-google.svg" alt="socials"></a>
+                  <a class="media-icon" id="icon-facebook" href="https://www.facebook.com/"><img src="img/media-facebook.svg" alt="socials"></a>
+                  <a class="media-icon" id="icon-twiter" href="https://twitter.com/"><img src="img/media-twiter.svg" alt="socials"></a>
+                  <a class="media-icon" id="icon-google" href="https://www.google.com.ua/"><img src="img/media-google.svg" alt="socials"></a>
                </div>
             </div>
          </section>
          <section class="copyright">
-            <div class="copyright_container">
-               <div class="copyright_content _container">
+            <div class="copyright_container _container">
+               <div class="copyright_content">
                   <p>© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>
                </div>
             </div>
          </section>
       </footer>
    </wrapper>
-   <script src="main.js"></script>
+   <script src="js/main.js"></script>
 </body>
 </html>
