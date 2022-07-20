@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +11,11 @@
    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
    <title>FIRST_PROJECT</title>
 </head>
-<body style='overflow-x:hidden;'>
-   <wrapper class="wrapper">
+<body>
+   <div class="wrapper">
       <div class="head-bg">
          <div class="bg-content">
-            <a href="#" class="bg-content__logo"><img src="img/head-bg-logo.svg"></a>
+            <a href="#" class="bg-content__logo"><img src="img/head-bg-logo.svg" alt="logo"></a>
             <div class="bg-content__text">
                <h1 class="bg-content__text-title">PARTNER WITH KONSTUCT</h1>
                <p class="bg-content__text-subtitle">An award-winning construction management firm</p>
@@ -23,16 +23,17 @@
             <button class="bg-content__btn">SCROLL DOWN</button>
          </div>
       </div>
+      <div class="empty-container"></div>
       <header class="header">
          <div class="header-block">
             <div class="header-content _container">
                <div class="header__logo">
-                  <span><a href="#" class="menu_logo"><img src="img/projeco-logo-black.svg"></a></span>
+                  <span><a href="#" class="menu_logo"><img src="img/projeco-logo-black.svg" alt="logo"></a></span>
                </div>
                <nav class="header__navbar">
                   <ul class="nav-list">
                      <li><a href="/" class="menu_link">HOME</a></li>
-                     <li><a href="/" class="menu_link _active">ABOUT</a></li>
+                     <li><a href="/" class="menu_link">ABOUT</a></li>
                      <li><a href="/" class="menu_link">SERVICES</a></li>
                      <li><a href="/" class="menu_link">WORK</a></li>
                      <li><a href="/" class="menu_link">CONTACT</a></li>
@@ -60,16 +61,16 @@
                      </div>
                      <div class="pictures">
                         <div class="picture">
-                           <img class="pic" src="img/Bitmap.png" alt="">
+                           <img class="pic" src="img/Bitmap.png" alt="picture">
                            <div class="picture__title"><h4>WE PLAN</h4></div>
                         </div>
                         <div class="picture">
-                           <img class="pic" src="img/Bitmap (1).png" alt="">
+                           <img class="pic" src="img/Bitmap1.png" alt="picture">
                            <div class="picture__title"><h4>WE
                               MANAGE</h4></div>
                         </div>
                         <div class="picture">
-                           <img class="pic" src="img/Bitmap (2).png" alt="">
+                           <img class="pic" src="img/Bitmap2.png" alt="picture">
                            <div class="picture__title"><h4>WE
                               BUILD</h4></div>
                         </div>
@@ -84,7 +85,7 @@
                <p class="services__description">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
                </p>
-               <button class="services__button">
+               <button class="services__button _button">
                   <span class="services__button-text">
                      ALL SERVICES
                   </span>
@@ -109,9 +110,6 @@
             </div>
          </section> 
          <section class="get-in-touch">
-            <div class="get-in-touch_bg">
-               <img src="img/get-in-touch-bg.png" alt="">
-            </div>
             <div class="get-in-touch__content _container">
                <h2 class="get-in-touch__question">
                   Want to build something amazing?
@@ -130,7 +128,7 @@
                      <h2 class="newsletter__content-text">
                         Newsletter Signup
                      </h2>
-                     <form class="newsletter__content_wrapper" action="" method="POST">
+                     <form class="newsletter__content_wrapper" action="/js/main.js" method="POST">
                         <input class="newsletter__content-input" type="email" placeholder="test@youremail.com">
                         <input class="newsletter__content-button _button _button-text" type="submit" value="SIGNUP">
                      </form>
@@ -175,7 +173,7 @@
                      </div>
                   </div>
                </div>
-               <adress class="footer__contact">
+               <div class="footer__contact">
                   <h4 class="footer__contact-title">
                      CONTACT US
                   </h4>
@@ -191,11 +189,11 @@
                      <a href="tel:+239942334022 ">+23 994 233 4022 </a>
                   </div>
                   <div class="footer__contact-mail">
-                     <a href = "mailto:info@konstruct.com?subject = Feedback&body = Message">
+                     <a href = "mailto:info@konstruct.com?subject=Feedback&body=Message">
                         info@konstruct.com
                         </a>
                   </div>
-               </adress>
+               </div>
                <div class="footer__media">
                   <a class="media-icon" id="icon-facebook" href="https://www.facebook.com/"><img src="img/media-facebook.svg" alt="socials"></a>
                   <a class="media-icon" id="icon-twiter" href="https://twitter.com/"><img src="img/media-twiter.svg" alt="socials"></a>
@@ -206,12 +204,15 @@
          <section class="copyright">
             <div class="copyright_container _container">
                <div class="copyright_content">
-                  <p>© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>
+                  <h6>© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</h6>
                </div>
             </div>
          </section>
       </footer>
-   </wrapper>
+      <div class="up-arrow">
+         <img src="/img/up-arrow.png" alt="up-arrow">
+      </div>
+   </div>
    <script src="js/main.js"></script>
 </body>
 </html>
