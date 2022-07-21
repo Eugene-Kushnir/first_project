@@ -685,7 +685,7 @@ body._lock{
       margin-left: 0px;
    }
    .picture:not(:first-child):not(:last-child){
-      margin: 0 5px;
+      margin: 0 10px;
    }
    .about{
       margin-bottom: 50px;
@@ -718,11 +718,11 @@ body._lock{
    .services_service{
       align-items: center;
    }
-   .service_cart{
+   /* .service_cart{
       margin: 0 16px;
-   }
+   } */
    .service_cart:not(:first-child):not(:last-child){
-      margin: 30px 16px;
+      margin: 30px 0;
    }
    .get-in-touch__content._container{
       justify-content: flex-end;
@@ -887,6 +887,10 @@ body._lock{
    }
 }
 @media only screen and (max-width: 460px){
+   .bg-content__text-title{
+      font-size: 40px;
+      line-height: 40px;
+   }
    .description{
       height: auto;
    }
