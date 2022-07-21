@@ -177,7 +177,7 @@ body._lock{
    width: 24px;
    height: 24px;
    right: 40px;
-   top: 40px;
+   top: 30px;
    display: none;
    
 }
@@ -651,6 +651,12 @@ body._lock{
    ._container{
       display: flex;
       justify-content: center;
+   }
+   .bg-content__btn{
+      margin-bottom: 31px;
+   }
+   .bg-content__logo{
+      margin-top: 30px;
    }
    .header-content{
       justify-content: space-between;
