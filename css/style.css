@@ -343,7 +343,7 @@ body._lock{
 .services_service{
    display: flex;
    width: auto;
-   /* margin: 0 -14px; */
+   margin: 0 -14px;
 }
 
 .service_cart{
@@ -357,11 +357,12 @@ body._lock{
    border: 1px solid #E6E6E6;
    padding: 38px 22px 39px 23px;
    color: #48555B;
+   margin: 0 14px;
 }
 
-.service_cart:not(:first-child):not(:last-child){
+/* .service_cart:not(:first-child):not(:last-child){
    margin: 0 27px;
-}
+} */
 
 .service_cart_title{
    font-weight: 700;
@@ -718,9 +719,13 @@ body._lock{
    .services_service{
       align-items: center;
    }
-   .service_cart:not(:first-child):not(:last-child){
-      margin: 30px 0;
+   .services_service{
+      margin: -15px -16px;
    }
+   .service_cart{
+      margin: 15px 16px;
+   }
+
    .get-in-touch__content._container{
       justify-content: flex-end;
    }
